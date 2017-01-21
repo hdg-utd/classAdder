@@ -6,6 +6,146 @@
   </head>
   <body>
     DO NOT VISIT THIS PAGE!
-    <script src="classAdder.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyDIQcBZ4aBzumtBy2vOWIXE_coJmsYaYCg",
+        authDomain: "test-bd419.firebaseapp.com",
+        databaseURL: "https://test-bd419.firebaseio.com",
+        storageBucket: "test-bd419.appspot.com",
+        messagingSenderId: "302255903097"
+      };
+
+      firebase.initializeApp(config);
+
+      const db = firebase.database().ref();
+      var classes = db.child("Classes");
+      //classes.child("Hello").set("Helio");
+      classes.set({
+        "Class1": {
+          "ClassId": "Class1",
+          "Questions": {
+            "Question1": {
+              "qID": 1,
+              "Likes": 1,
+              "Name": "Paul Smith",
+              "Text": "What is the population density of Silicon Valley",
+              "AnswerText": ""
+            }
+          }
+        },
+        "Class2": {
+          "ClassId": "Class2",
+          "Questions": {
+            "Question1": {
+              "qID": 1,
+              "Likes": 1,
+              "Name": "Paul Smith",
+              "Text": "What is the population density of Silicon Valley",
+              "AnswerText": ""
+            }
+          }
+        },
+        "Class3": {
+          "ClassId": "Class3",
+          "Questions": {
+            "Question1": {
+              "qID": 1,
+              "Likes": 1,
+              "Name": "Paul Smith",
+              "Text": "What is the population density of Silicon Valley",
+              "AnswerText": ""
+            }
+          }
+        },
+        "Class4": {
+          "ClassId": "Class4",
+          "Questions": {
+            "Question1": {
+              "qID": 1,
+              "Likes": 1,
+              "Name": "Paul Smith",
+              "Text": "What is the population density of Silicon Valley",
+              "AnswerText": ""
+            }
+          }
+        },
+        "Class5": {
+          "ClassId": "Class5",
+          "Questions": {
+            "Question1": {
+              "qID": 1,
+              "Likes": 1,
+              "Name": "Paul Smith",
+              "Text": "What is the population density of Silicon Valley",
+              "AnswerText": ""
+            }
+          }
+        },
+        "Class6": {
+          "ClassId": "Class6",
+          "Questions": {
+            "Question1": {
+              "qID": 1,
+              "Likes": 1,
+              "Name": "Paul Smith",
+              "Text": "What is the population density of Silicon Valley",
+              "AnswerText": ""
+            }
+          }
+        },
+        "Class7": {
+          "ClassId": "Class7",
+          "Questions": {
+            "Question1": {
+              "qID": 1,
+              "Likes": 1,
+              "Name": "Paul Smith",
+              "Text": "What is the population density of Silicon Valley",
+              "AnswerText": ""
+            }
+          }
+        },
+        "Class8": {
+          "ClassId": "Class8",
+          "Questions": {
+            "Question1": {
+              "qID": 1,
+              "Likes": 1,
+              "Name": "Paul Smith",
+              "Text": "What is the population density of Silicon Valley",
+              "AnswerText": ""
+            }
+          }
+        },
+        "Class9": {
+          "ClassId": "Class9",
+          "Questions": {
+            "Question1": {
+              "qID": 1,
+              "Likes": 1,
+              "Name": "Paul Smith",
+              "Text": "What is the population density of Silicon Valley",
+              "AnswerText": ""
+            }
+          }
+        },
+        "Class10": {
+          "ClassId": "Class10",
+          "Questions": {
+            "Question1": {
+              "qID": 1,
+              "Likes": 1,
+              "Name": "Paul Smith",
+              "Text": "What is the population density of Silicon Valley",
+              "AnswerText": ""
+            }
+          }
+        }
+      });
+    </script>
   </body>
 </html>
